@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (max-width: 1080px) {
+    html {
+      font-size: 93.75%; /* 15px! */
+    }
+  }
+  
+  @media (max-width: 720px) {
+    html {
+      font-size: 87.5%; /* 14px! */
+    }
+  }
+  
+  body {
+    background-color: #eee;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Helvetica';
+  }
+  
+  .main-game {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .genius {
+    display: grid;
+    grid-template-areas:
+      'verde vermelho'
+      'amarelo azul';
+  
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+  }
+  
+  .blue {
+    grid-area: azul;
+    background-color: #000080;
+    border-bottom-right-radius: 100%;
+    border: 0.7rem solid #333333;
+  }
+  
+  .red {
+    grid-area: vermelho;
+    background-color: #8b0000;
+    border-top-right-radius: 100%;
+    border: 0.7rem solid #333333;
+  }
+  
+  .yellow {
+    grid-area: amarelo;
+    background-color: #ffbf00;
+    border-bottom-left-radius: 100%;
+    border: 0.7rem solid #333333;
+  }
+  
+  .green {
+    grid-area: verde;
+    background-color: #005000;
+    border-top-left-radius: 100%;
+    border: 0.7rem solid #333333;
+  }
+  
+  .blue.selected {
+    background-color: #1c8cff;
+  }
+  .red.selected {
+    background-color: #ff4c4c;
+  }
+  
+  .yellow.selected {
+    background-color: #ffff4c;
+  }
+  .green.selected {
+    background-color: #13ff7c;
+  }
+  
+  .gameDisplay {
+    position: absolute;
+    text-align: center;
+  
+    background-color: #ece7ee;
+    border-radius: 100%;
+    width: 16rem;
+    height: 16rem;
+  
+    border: 0.7rem solid #333333;
+  }
+  
+  .gameTitle {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 1.2rem;
+    padding-top: 4.7rem;
+  }
+  
+  .reg {
+    font-family: verdana, sans-serif;
+    font-size: 1.1rem;
+    margin-left: -0.7rem;
+    vertical-align: top;
+  }
+  
+  .gameScore {
+    width: 10rem;
+  }
+  
+  .scoreJogador {
+    background-color: #32050c;
+    color: #dc0d29;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: right;
+    width: 2.5rem;
+    border: 0.3rem solid #000;
+    border-radius: 1rem;
+    margin-left: 3.125rem;
+    padding-right: 0.2rem;
+    padding-left: 0.3rem;
+  }
+  
+  .label {
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
